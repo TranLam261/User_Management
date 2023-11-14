@@ -317,9 +317,6 @@ async function init() {
             {name: name.value, tel: tel.value, email: email.value, adress: adress.value, city: city.value, district: district.value, ward: ward.value}
         ]
 
-        console.log(data);
-        console.log(lsData);
-
         userData.map(function(item) {
             lsData.push({
                 "name"      : item.name,
@@ -333,8 +330,6 @@ async function init() {
         })
 
         localStorage.setItem('users', JSON.stringify(lsData));
-        console.log(data);
-        console.log(lsData);
 
         data = lsData;
         pagination(data);
