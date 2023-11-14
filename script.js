@@ -47,10 +47,6 @@ localStorage.removeItem('users');
 lsData = localStorage.getItem('users') ?
 JSON.parse(localStorage.getItem('users')) : [] ;
 
-for(let i=0; i<lsData.length; i++){
-    console.log(JSON.stringify(lsData[i]));
-}
-
 async function init() {
   
     // Selectors
@@ -197,7 +193,7 @@ async function init() {
         let pageCount;
         if(data.length%pageSize === 0 && data.length > 5){
             pageCount = data.length/pageSize;
-        } else if (data.length%pageSize === 1 && data.length > 5){
+        } else if (data.length%pageSize !== 1 && data.length > 5){
             pageCount = Math.floor(data.length/pageSize)+1; 
         } else if(data.length >= 0 && data.length <= 5) {
             pageCount = 1;
