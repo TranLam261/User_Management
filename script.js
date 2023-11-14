@@ -341,6 +341,139 @@ async function init() {
         form.reset();
     });   
 
+    //Form city - district - country
+    city.onchange = function() {
+        switch(city.value) {
+            case 'Hà Nội':
+                district.innerHTML =  `
+                <option value="default" disabled selected>Chọn giá trị</option>
+                <option value="huyện 1">huyện 1</option>
+                <option value="huyện 2">huyện 2</option>
+                <option value="quận 1">quận 1</option>
+                <option value="quận 2">quận 2</option>
+                `
+                ward.innerHTML = `
+                <option value="default" disabled selected>Chọn giá trị</option>  
+                <option value="xã 1">xã 1</option>
+                <option value="xã 2">xã 2</option>
+                <option value="xã 3">xã 3</option>
+                <option value="xã 4">xã 4</option>
+                <option value="xã 5">xã 5</option>
+                `
+            break;
+            
+            case 'Hồ Chí Minh':
+                district.innerHTML =  `
+                <option value="default" disabled selected>Chọn giá trị</option>
+                <option value="huyện 1">huyện 1</option>
+                <option value="huyện 2">huyện 2</option>
+                <option value="quận 1">quận 1</option>
+                <option value="quận 2">quận 2</option>
+                `
+                ward.innerHTML = `
+                <option value="default" disabled selected>Chọn giá trị</option>  
+                <option value="xã 1">xã 1</option>
+                <option value="xã 2">xã 2</option>
+                <option value="xã 3">xã 3</option>
+                <option value="xã 4">xã 4</option>
+                <option value="xã 5">xã 5</option>
+                `
+            break;
+
+            case 'Cần Thơ':
+                district.innerHTML =  `
+                <option value="default" disabled selected>Chọn giá trị</option>
+                <option value="huyện 1">huyện 1</option>
+                <option value="huyện 2">huyện 2</option>
+                <option value="quận 1">quận 1</option>
+                <option value="quận 2">quận 2</option>
+                `
+                ward.innerHTML = `
+                <option value="default" disabled selected>Chọn giá trị</option>  
+                <option value="xã 1">xã 1</option>
+                <option value="xã 2">xã 2</option>
+                <option value="xã 3">xã 3</option>
+                <option value="xã 4">xã 4</option>
+                <option value="xã 5">xã 5</option>
+                `
+            break;
+
+            case 'Bắc Ninh':
+                district.innerHTML =  `
+                <option value="default" disabled selected>Chọn giá trị</option>
+                <option value="huyện 1">huyện 1</option>
+                <option value="huyện 2">huyện 2</option>
+                <option value="quận 1">quận 1</option>
+                <option value="quận 2">quận 2</option>
+                `
+                ward.innerHTML = `
+                <option value="default" disabled selected>Chọn giá trị</option>  
+                <option value="xã 1">xã 1</option>
+                <option value="xã 2">xã 2</option>
+                <option value="xã 3">xã 3</option>
+                <option value="xã 4">xã 4</option>
+                <option value="xã 5">xã 5</option>
+                `
+            break;
+
+            case 'Hải Phòng':
+                district.innerHTML =  `
+                <option value="default" disabled selected>Chọn giá trị</option>
+                <option value="huyện 1">huyện 1</option>
+                <option value="huyện 2">huyện 2</option>
+                <option value="quận 1">quận 1</option>
+                <option value="quận 2">quận 2</option>
+                `
+                ward.innerHTML = `
+                <option value="default" disabled selected>Chọn giá trị</option>  
+                <option value="xã 1">xã 1</option>
+                <option value="xã 2">xã 2</option>
+                <option value="xã 3">xã 3</option>
+                <option value="xã 4">xã 4</option>
+                <option value="xã 5">xã 5</option>
+                `
+            break;
+
+            case 'Đà Nẵng':
+                district.innerHTML =  `
+                <option value="default" disabled selected>Chọn giá trị</option>
+                <option value="huyện 1">huyện 1</option>
+                <option value="huyện 2">huyện 2</option>
+                <option value="quận 1">quận 1</option>
+                <option value="quận 2">quận 2</option>
+                `
+                ward.innerHTML = `
+                <option value="default" disabled selected>Chọn giá trị</option>  
+                <option value="xã 1">xã 1</option>
+                <option value="xã 2">xã 2</option>
+                <option value="xã 3">xã 3</option>
+                <option value="xã 4">xã 4</option>
+                <option value="xã 5">xã 5</option>
+                `
+            break;
+
+            case 'Hưng Yên':
+                district.innerHtml =  `
+                <option value="default" disabled selected>Chọn giá trị</option>
+                <option value="huyện 1">huyện 1</option>
+                <option value="huyện 2">huyện 2</option>
+                <option value="quận 1">quận 1</option>
+                <option value="quận 2">quận 2</option>
+                `
+                ward.innerHTML = `
+                <option value="default" disabled selected>Chọn giá trị</option>  
+                <option value="xã 1">xã 1</option>
+                <option value="xã 2">xã 2</option>
+                <option value="xã 3">xã 3</option>
+                <option value="xã 4">xã 4</option>
+                <option value="xã 5">xã 5</option>
+                `
+            break;
+
+            default:
+        }
+    }
+
     //See only modal - SOM
     const modal = document.getElementById('userInfoModal');
     const seeOnlyModal = document.getElementById('seeModalBtn');
