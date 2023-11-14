@@ -39,6 +39,11 @@ let exampleData = [
 localStorage.setItem('users', JSON.stringify(exampleData));
 */
 
+// delete all users data
+/*
+localStorage.removeItem('users');
+*/
+
 lsData = localStorage.getItem('users') ?
 JSON.parse(localStorage.getItem('users')) : [] ;
 
